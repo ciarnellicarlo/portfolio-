@@ -19,9 +19,22 @@
 
 h3, h5 {
     font-family: 'Montserrat';
-    letter-spacing: 14px;
     text-transform: uppercase;
-    opacity: 0.75;
     margin: 1px;
     user-select: none;
+    opacity: 0;
+    animation: fadein 2.5s 0.2s forwards;
+}
+
+@keyframes fadein {
+
+    0% {
+        opacity: 0;
+        letter-spacing: -4px;
+    }
+    100% {
+        opacity: 0.75;
+        letter-spacing: 14px;
+    }
+
 }
