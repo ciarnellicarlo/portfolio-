@@ -71,7 +71,7 @@ h3, h5 {
     }
     100% {
         overflow-y: auto;
-        opacity: 0.8;
+        opacity: 0.9;
         letter-spacing: 14px;
         color: #00ac6a;
     }
@@ -109,7 +109,7 @@ h1 {
     margin-top: 10vh;
     user-select: none;
     text-shadow: 0px 0px 5px rgba(0,0,0,0.1);
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #projects-container {
@@ -132,7 +132,7 @@ h1 {
 }
 
 .projects-item img {
-    width: 319px;
+    width: 300px;
     opacity: 1;
     transition: all 0.3s ease;
     z-index: 19;
@@ -145,7 +145,7 @@ h1 {
 }
 
 .projects-item a {
-    width: 351px;
+    width: 330px;
     position: absolute;
     transform: translateY(80px);
     z-index: 0;
@@ -174,6 +174,8 @@ h1 {
 
 .projects-item:hover a:nth-of-type(2) {
     animation: slidein2 0.3s ease 0.2s forwards;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .projects-item:hover img {
@@ -197,7 +199,7 @@ h1 {
     }
     100% {
         visibility: visible;
-        transform: translateY(184px);
+        transform: translateY(174px);
     }
 }
 
@@ -214,7 +216,7 @@ h1 {
     }
     100% {
         visibility: visible;
-        transform: translateY(210px);
+        transform: translateY(200px);
     }
 }
 
