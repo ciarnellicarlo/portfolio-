@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
     <title>Carlo Ciarnelli - Web Developer</title>
 </head>
@@ -19,15 +20,20 @@
         <div id="projects-container">
             <div class="projects-item">
                 <img src="suns.JPG" alt="Sunshine Animal Sanctuary">
-                <a href="#">View Code  <i class="fab fa-github"></i></a>
-                <a href="#">View Project  <i class="fab fa-github"></i></a>
+                <a href="#">View Live <i class="fas fa-desktop"></i></a>
+                <a href="#">View Code <i class="fas fa-code-branch"></i></a>
             </div>
             <div class="projects-item">
                 <img src="vacc.JPG" alt="Covid Vaccination Tracker">
-                <a href="#">View Code <i class="fab fa-github"></i></a>
-                <a href="#">View Project <i class="fab fa-github"></i></a>
+                <a href="#">View Live <i class="fas fa-desktop"></i></a>
+                <a href="#">View Code <i class="fas fa-code-branch"></i></a>
             </div>
         </div>
     </section>
+    <canvas class="background"></canvas>
+    <script>window.onload = function() {
+          Particles.init({selector: '.background', connectParticles: 'true', color: '#FFFFFF'});
+        };
+    </script>
 </body>
 </html>

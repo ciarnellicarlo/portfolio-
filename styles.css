@@ -14,8 +14,8 @@ section {
 }
 
 #hero {
-    background: rgb(0,39,44);
-    background: linear-gradient(0deg, rgb(30, 30, 30) 0%, rgb(17, 17, 17) 70%, rgb(15, 15, 15) 100%);
+    background: rgb(0, 45, 51);
+    background: linear-gradient(0deg, rgb(0, 45, 51) 0%, rgb(19, 19, 19) 70%, rgb(15, 15, 15) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,11 +32,16 @@ h3, h5 {
     animation: fadein 2.5s 0.2s forwards;
     text-align: center;
     text-shadow: 0 0 2px #00ac6a;
+    z-index: 2;
 }
 
 #hero a {
     position: absolute;
     top: 90%;
+}
+
+#arrow {
+    z-index: 1;
 }
 
 #arrow i {
@@ -45,6 +50,15 @@ h3, h5 {
     color: whitesmoke;
     opacity: 0;
     animation: arrow 0.8s ease 2.8s infinite;
+}
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.25;
 }
 
 @keyframes fadein {
@@ -70,7 +84,7 @@ h3, h5 {
         transform: translateY(-20px);
     }
     50% {
-        opacity: 0.4;
+        opacity: 0.7;
     }
     60% {
         opacity: 0.25;
@@ -142,10 +156,12 @@ h1 {
     text-align: center;
     padding: 5px 0;
     font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .projects-item a:nth-of-type(1) {
     background-color: rgb(0,39,44);
+    z-index: 1;
 }
 
 .projects-item a:nth-of-type(2) {
@@ -153,15 +169,19 @@ h1 {
 }
 
 .projects-item:hover a:nth-of-type(1) {
-    animation: slidein 0.4s ease 0.1s forwards;
+    animation: slidein 0.3s ease 0.1s forwards;
 }
 
 .projects-item:hover a:nth-of-type(2) {
-    animation: slidein2 0.4s ease 0.1s forwards;
+    animation: slidein2 0.3s ease 0.2s forwards;
 }
 
 .projects-item:hover img {
     transform: scale(1.1);
+}
+
+.projects-item a i {
+    transform: translate(2px, 1px);
 }
 
 @keyframes slidein {
@@ -197,3 +217,4 @@ h1 {
         transform: translateY(210px);
     }
 }
+
