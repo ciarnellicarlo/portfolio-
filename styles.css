@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 * {
     margin: 0;
@@ -28,7 +28,7 @@ h3, h5 {
     padding-left: 1rem;
     user-select: none;
     opacity: 0;
-    font-weight: 200;
+    font-weight: 300;
     animation: fadein 2.5s 0.2s forwards;
     text-align: center;
     text-shadow: 0 0 2px #00ac6a;
@@ -95,6 +95,7 @@ h1 {
     margin-top: 10vh;
     user-select: none;
     text-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    font-weight: 300;
 }
 
 #projects-container {
@@ -117,47 +118,82 @@ h1 {
 }
 
 .projects-item img {
-    width: 350px;
+    width: 319px;
     opacity: 1;
-    transition: all 0.6s ease;
+    transition: all 0.3s ease;
     z-index: 19;
     box-shadow: 0px 0px 8px -3px rgba(0,0,0,0.8);
     margin-top: 20px;
 }
 
 .projects-item img:hover {
-    opacity: 1;
     cursor: pointer;
 }
 
 .projects-item a {
-    width: 350px;
+    width: 351px;
     position: absolute;
     transform: translateY(80px);
     z-index: 0;
     visibility: hidden;
-    transition: all 0.4s;
     color: white;
     text-decoration: none;
     font-size: 0.8rem;
     text-align: center;
     padding: 5px 0;
+    font-weight: 400;
 }
 
 .projects-item a:nth-of-type(1) {
-    background-color: #00ac6a;
+    background-color: rgb(0,39,44);
 }
 
 .projects-item a:nth-of-type(2) {
-    background-color: #00ac6a
+    background-color: #00ac6a;
 }
 
 .projects-item:hover a:nth-of-type(1) {
-    transform: translateY(191px);
-    visibility: visible;
+    animation: slidein 0.4s ease 0.1s forwards;
 }
 
 .projects-item:hover a:nth-of-type(2) {
-    transform: translateY(215px);
-    visibility: visible;
+    animation: slidein2 0.4s ease 0.1s forwards;
+}
+
+.projects-item:hover img {
+    transform: scale(1.1);
+}
+
+@keyframes slidein {
+    0% {
+        visibility: hidden;
+        transform: translateY(80px);
+    }
+    40% {
+        visibility: hidden;
+    }
+    60% {
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+        transform: translateY(184px);
+    }
+}
+
+@keyframes slidein2 {
+    0% {
+        visibility: hidden;
+        transform: translateY(80px);
+    }
+    40% {
+        visibility: hidden;
+    }
+    60% {
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+        transform: translateY(210px);
+    }
 }
