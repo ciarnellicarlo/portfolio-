@@ -35,6 +35,14 @@ h3, h5 {
     z-index: 2;
 }
 
+h3 {
+    font-size: 1.6rem
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
 #hero a {
     position: absolute;
     top: 90%;
