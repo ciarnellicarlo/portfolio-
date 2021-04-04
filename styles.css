@@ -96,8 +96,29 @@ h3, h5 {
 }
 
 #projects {
-    background: rgb(230,230,230);
-    background: linear-gradient(180deg, rgb(230, 230, 230) 0%, rgb(200, 200, 200) 100%);
+    background: rgb(241, 241, 241);
+    background: linear-gradient(180deg, rgb(241, 241, 241) 0%, rgb(208, 208, 208) 100%);
+    position: relative
+}
+
+.custom-shape-divider-top-1617530289 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1617530289 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1617530289 .shape-fill {
+    fill: #002D33;
 }
 
 h1 {
@@ -183,7 +204,7 @@ h1 {
 }
 
 .projects-item a i {
-    transform: translate(2px, 1px);
+    transform: translate(5px, 2px);
 }
 
 @keyframes slidein {
