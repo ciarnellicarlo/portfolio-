@@ -14,8 +14,8 @@ section {
 }
 
 #hero {
-    background: rgb(0, 64, 71);
-    background: linear-gradient(0deg, rgb(0, 64, 71) 0%, rgb(5, 25, 25) 70%, rgb(2, 21, 21) 100%);
+    background: rgb(0, 205, 228);
+    background: linear-gradient(0deg, rgb(0, 205, 228) 0%,  #0CA4FA 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ h3, h5 {
     font-weight: 300;
     animation: fadein 2.5s 0.2s forwards;
     text-align: center;
-    text-shadow: 0 0 2px #00ac6a;
+    text-shadow: 0 0 2px whitesmoke;
     z-index: 2;
 }
 
@@ -66,7 +66,7 @@ h5 {
     top: 0;
     left: 0;
     z-index: 0;
-    opacity: 0.25;
+    opacity: 0.75;
 }
 
 @keyframes fadein {
@@ -81,7 +81,7 @@ h5 {
         overflow-y: auto;
         opacity: 0.9;
         letter-spacing: 14px;
-        color: #00ac6a;
+        color: whitesmoke;
     }
 
 }
@@ -92,10 +92,10 @@ h5 {
         transform: translateY(-20px);
     }
     50% {
-        opacity: 0.7;
+        opacity: 0.9;
     }
     60% {
-        opacity: 0.25;
+        opacity: 0.5;
     }
     100% {
         opacity: 0;
@@ -104,7 +104,7 @@ h5 {
 }
 
 #projects {
-    background: azure;
+    background: whitesmoke;
     position: relative;
 }
 
@@ -125,7 +125,7 @@ h5 {
 }
 
 .custom-shape-divider-top-1617530289 .shape-fill {
-    fill: rgb(0, 64, 71);
+    fill: rgb(0, 205, 228);
 }
 
 .custom-shape-divider-bottom-1617541298 {
@@ -146,11 +146,11 @@ h5 {
 }
 
 .custom-shape-divider-bottom-1617541298 .shape-fill {
-    fill: azure;
+    fill: whitesmoke;
 }
 
 h1 {
-    color: rgb(0, 64, 71);
+    color: rgb(0, 197, 219);
     text-transform: uppercase;
     letter-spacing: 8px;
     opacity: 0.9;
@@ -187,6 +187,7 @@ h1 {
     z-index: 19;
     box-shadow: 0px 0px 8px -3px rgba(0,0,0,0.8);
     margin-top: 20px;
+    filter: grayscale(50%);
 }
 
 .projects-item img:hover {
@@ -209,12 +210,12 @@ h1 {
 }
 
 .projects-item a:nth-of-type(1) {
-    background-color: rgb(0, 64, 71);
+    background-color: #0CA4FA;
     z-index: 1;
 }
 
 .projects-item a:nth-of-type(2) {
-    background-color: #00ac6a;
+    background-color: rgb(0, 205, 228);
 }
 
 .projects-item:hover a:nth-of-type(1) {
@@ -229,6 +230,7 @@ h1 {
 
 .projects-item:hover img {
     transform: scale(1.1);
+    filter: grayscale(0);
 }
 
 .projects-item a i {
@@ -270,7 +272,7 @@ h1 {
 }
 
 #contact {
-    background: rgb(0, 64, 71);
-    background: linear-gradient(180deg, rgb(0, 64, 71) 0%, rgb(5, 25, 25) 70%, rgb(2, 21, 21) 100%);
+    background: rgb(0, 205, 228);
+    background: linear-gradient(180deg, rgb(0, 205, 228) 0%,  #0CA4FA 100%);
     position: relative;
 }
