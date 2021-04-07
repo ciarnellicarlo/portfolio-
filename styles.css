@@ -128,30 +128,6 @@ h5 {
     fill: rgb(0, 205, 228);
 }
 
-.custom-shape-divider-bottom-1617541298 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: 5;
-}
-
-.custom-shape-divider-bottom-1617541298 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 152px;
-    transform: rotateY(180deg);
-    z-index: 5;
-}
-
-.custom-shape-divider-bottom-1617541298 .shape-fill {
-    fill: white;
-    z-index: 5;
-}
-
 h1 {
     color: rgb(0, 197, 219);
     text-transform: uppercase;
@@ -294,6 +270,30 @@ h1 {
     position: relative;
 }
 
+.custom-shape-divider-bottom-1617541298 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 5;
+}
+
+.custom-shape-divider-bottom-1617541298 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 152px;
+    transform: rotateY(180deg);
+    z-index: 5;
+}
+
+.custom-shape-divider-bottom-1617541298 .shape-fill {
+    fill: white;
+    z-index: 5;
+}
+
 .contact-background {
     position: absolute;
     height: 100vh;
@@ -303,5 +303,28 @@ h1 {
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, rgba(0,205,228,1) 23px ), repeating-linear-gradient( #0CA4FA55, #0CA4FA );
 }
 
+.contact-container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.contact-container h1 {
+    color: white;
+}
 
+.skillset i {
+    color: white;
+    transform: scale(4);
+    margin: 50px;
+}
+
+.skillset i:nth-of-type(1){
+    color: #e64c18;
+}
+
+.skillset i:nth-of-type(2){
+    color: lightblue;
+}
