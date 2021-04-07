@@ -314,18 +314,17 @@ h1 {
 
 .contact-container h1 {
     color: white;
-    margin: 40px;
+    margin: 50px 0;
 }
 
 .skillset {
-    background-color: rgba(white, white, white, 0.2);
-    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
 }
 
 .skillset i {
     transform: scale(4);
-    margin: 40px;
+    margin: 50px 48px 45px 50px;
 }
 
 .skillset i:nth-of-type(1){
@@ -346,4 +345,23 @@ h1 {
 
 .skillset i:nth-of-type(5){
     color: #41b883;
+}
+
+.linkedin-email {
+    font-size: 1.25rem;
+}
+
+.linkedin-email p{
+    color: white;
+    margin: 5px;
+}
+
+.linkedin-email a {
+    text-decoration: underline;
+    color: white;
+}
+
+.linkedin-email i {
+    color: #0274b3;
+    transform: translate(2px, 2px)
 }
