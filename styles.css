@@ -365,3 +365,23 @@ h1 {
     color: #0274b3;
     transform: translate(2px, 2px)
 }
+
+@media screen and (max-width: 768px) {
+    .custom-shape-divider-bottom-1617541298 svg {
+        height: 60px;
+    }
+    .custom-shape-divider-top-1617530289 svg {
+        height: 60px;
+    }
+    #projects-container {
+        flex-direction: column;
+        margin-top: 5vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .skillset i {
+        transform: scale(3);
+        margin: 25px 24px 23px 25px;
+    }
+}
