@@ -61,9 +61,17 @@
     </section>
     
     <canvas class="background"></canvas>
-    <script>window.onload = function() {
-          Particles.init({selector: '.background', connectParticles: 'true', color: '#FFFFFF', maxParticles: '80'});
-        };
+    <script>
+    window.onload = function() {
+          Particles.init({selector: '.background', connectParticles: 'true', color: '#FFFFFF', maxParticles: '80',         
+    responsive: [
+    {
+        breakpoint: 600,
+        options: {
+        maxParticles: 30,
+    }
+}]
+})}
     </script>
 </body>
 </html>
