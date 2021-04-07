@@ -359,11 +359,16 @@ h1 {
 .linkedin-email a {
     text-decoration: underline;
     color: white;
+    margin: 5px;
 }
 
 .linkedin-email i {
     color: #0274b3;
     transform: translate(2px, 2px)
+}
+
+.linkedin-email p {
+    margin: 5px;
 }
 
 @media screen and (max-width: 768px) {
