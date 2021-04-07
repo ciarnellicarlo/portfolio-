@@ -104,7 +104,7 @@ h5 {
 }
 
 #projects {
-    background: whitesmoke;
+    background: white;
     position: relative;
 }
 
@@ -135,6 +135,7 @@ h5 {
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    z-index: 5;
 }
 
 .custom-shape-divider-bottom-1617541298 svg {
@@ -143,10 +144,12 @@ h5 {
     width: calc(100% + 1.3px);
     height: 152px;
     transform: rotateY(180deg);
+    z-index: 5;
 }
 
 .custom-shape-divider-bottom-1617541298 .shape-fill {
-    fill: whitesmoke;
+    fill: white;
+    z-index: 5;
 }
 
 h1 {
@@ -162,8 +165,7 @@ h1 {
 }
 
 #projects-container {
-    margin-top: 10vh;
-    height: 50vh;
+    height: 80vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -185,9 +187,9 @@ h1 {
     opacity: 1;
     transition: all 0.3s ease;
     z-index: 19;
-    box-shadow: 0px 0px 8px -3px rgba(0,0,0,0.8);
     margin-top: 20px;
-    filter: grayscale(50%);
+    opacity: 0.9;
+    border-radius: 3px;
 }
 
 .projects-item img:hover {
@@ -207,11 +209,13 @@ h1 {
     padding: 5px 0;
     font-weight: 400;
     letter-spacing: 1px;
+    transition: all 0.2s;
 }
 
 .projects-item a:nth-of-type(1) {
     background-color: #0CA4FA;
     z-index: 1;
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.6);
 }
 
 .projects-item a:nth-of-type(2) {
@@ -228,9 +232,22 @@ h1 {
     border-bottom-left-radius: 5px;
 }
 
+.projects-item a:nth-of-type(1):hover {
+    color: #0CA4FA;
+    background-color: whitesmoke;
+    transition: all 0.2s;
+}
+
+.projects-item a:nth-of-type(2):hover {
+    color: rgb(0, 205, 228);
+    background-color: whitesmoke;
+    transition: all 0.2s;
+}
+
 .projects-item:hover img {
     transform: scale(1.1);
-    filter: grayscale(0);
+    opacity: 1;
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,1);
 }
 
 .projects-item a i {
@@ -276,3 +293,15 @@ h1 {
     background: linear-gradient(180deg, rgb(0, 205, 228) 0%,  #0CA4FA 100%);
     position: relative;
 }
+
+.contact-background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,205,228,1);
+    opacity: 0.2;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, rgba(0,205,228,1) 23px ), repeating-linear-gradient( #0CA4FA55, #0CA4FA );
+}
+
+
+
