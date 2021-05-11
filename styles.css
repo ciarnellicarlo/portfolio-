@@ -371,16 +371,20 @@ h1 {
     margin: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .custom-shape-divider-bottom-1617541298 svg {
         height: 60px;
     }
     .custom-shape-divider-top-1617530289 svg {
         height: 60px;
     }
+    #projects {
+        height: 100%;
+    }
     #projects-container {
         flex-direction: column;
         margin-top: 5vh;
+        height: 100%;
     }
 }
 
